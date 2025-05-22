@@ -183,6 +183,11 @@ h1 {
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(255, 149, 0, 0.3);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    animation: pulse 2s infinite;
 }
 .claim-btn:hover {
     transform: translateY(-2px);
