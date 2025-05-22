@@ -471,3 +471,15 @@ h1 {
         font-size: 0.85rem;
     }
 }
+@media (max-width: 768px) {
+    .cpa-highlight {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    .cpa-highlight h2 {
+        font-size: 1.3rem;
+    }
+    .cpa-highlight p {
+        font-size: 0.85rem;
+    }
+}
