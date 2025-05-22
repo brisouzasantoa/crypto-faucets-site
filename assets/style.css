@@ -302,6 +302,13 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
 }
+.cookie-banner p {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
 .cookie-banner button {
     background-color: var(--primary);
     color: white;
