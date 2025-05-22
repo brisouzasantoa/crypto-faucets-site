@@ -2,28 +2,270 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🔥 CPA Offers Paying Now | Earn Crypto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Top CPA Offers Paying Now | Earn Crypto</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>🔥 CPA Offers Paying Now!</h1>
-        <p class="subtitle">Earn crypto by promoting high-converting CPA offers</p>
+        <h1>🔥 TOP CPA OFFERS PAYING NOW</h1>
+        <p>High-converting offers • Instant payouts • Trusted by publishers</p>
     </header>
 
-    <!-- Oferta Exemplo -->
-    <div class="offer-card">
-        <h2>BitLabs Surveys</h2>
-        <p>🎯 Fill out surveys and earn in BTC/DOGE</p>
-        <button class="claim-btn" onclick="window.location.href='#'">Promote Offer →</button>
+    <!-- Ad Space -->
+    <div class="ad-space">
+        <p>Ad space (Kadam, Propeller Ads, Adsterra)</p>
     </div>
 
-    <div class="offer-card">
-        <h2>CoinAd Network</h2>
-        <p>📱 Promote mobile apps & earn per install</p>
-        <button class="claim-btn" onclick="window.location.href='#'">Promote Offer →</button>
+    <!-- Dynamic Notifications -->
+    <div class="notification-container top" id="notificationContainerTop"></div>
+    <div class="notification-container bottom" id="notificationContainerBottom"></div>
+
+    <!-- CPA Platforms List -->
+    <div class="platforms-list">
+
+        <!-- CPAGrip -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">1. CPAGrip</span>
+                    <span class="platform-badge">BEST FOR BEGINNERS</span>
+                </div>
+                <div class="platform-rating">4.9 <span class="stars">★★★★★</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📱 Installs, surveys, gift cards</p>
+                <p>💰 Payout: $0.20–$10 per action</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('CPAGrip', 'USD')">PROMOTE NOW</button>
+        </div>
+
+        <!-- OGAds -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">2. OGAds</span>
+                    <span class="platform-badge">MOBILE CONVERSIONS</span>
+                </div>
+                <div class="platform-rating">4.7 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📲 Android/iOS app installs, games</p>
+                <p>💸 Weekly payout: $0.50–$5 per install</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('OGAds', 'USD')">EARN PER INSTALL</button>
+        </div>
+
+        <!-- CPALead -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">3. CPALead</span>
+                    <span class="platform-badge">CONTENT LOCKER</span>
+                </div>
+                <div class="platform-rating">4.8 <span class="stars">★★★★★</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📦 App downloads, signups, gift cards</p>
+                <p>💵 Instant PayPal payments: $0.30–$15 per action</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('CPALead', 'BTC')">VIEW OFFERS</button>
+        </div>
+
+        <!-- AdWork Media -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">4. AdWork Media</span>
+                    <span class="platform-badge">HIGH TICKET</span>
+                </div>
+                <div class="platform-rating">4.6 <span class="stars">★★★★★</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📊 Surveys, trials, app installs</p>
+                <p>💼 High-value leads: $1–$50 per conversion</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('AdWorkMedia', 'USD')">JOIN NETWORK</button>
+        </div>
+
+        <!-- KiwiWall -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">5. KiwiWall</span>
+                    <span class="platform-badge">GLOBAL</span>
+                </div>
+                <div class="platform-rating">4.5 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🎁 Gift cards, apps, mobile games</p>
+                <p>💳 Payments via PayPal, Amazon, Steam: $0.50–$3</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('KiwiWall', 'USD')">START EARNING</button>
+        </div>
+
+        <!-- AdGem -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">6. AdGem</span>
+                    <span class="platform-badge">APP REWARDS</span>
+                </div>
+                <div class="platform-rating">4.6 <span class="stars">★★★★★</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📱 iOS/Android app installs & games</p>
+                <p>💎 Up to $50 per install: $0.10–$50</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('AdGem', 'USD')">GET HIGHER LEADS</button>
+        </div>
+
+        <!-- OfferToro -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">7. OfferToro</span>
+                    <span class="platform-badge">USED BY APPS</span>
+                </div>
+                <div class="platform-rating">4.4 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🎮 Apps, surveys, gift cards</p>
+                <p>🏆 Avg: $0.10–$5 per action</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('OfferToro', 'USD')">PROMOTE OFFERS</button>
+        </div>
+
+        <!-- Revenue Universe -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">8. Revenue Universe</span>
+                    <span class="platform-badge">BRAND DEALS</span>
+                </div>
+                <div class="platform-rating">4.5 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🛍️ Surveys, gift cards, trials</p>
+                <p>🎯 Avg: $0.50–$30 per lead</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('RevenueUniverse', 'USD')">CHECK BRANDS</button>
+        </div>
+
+        <!-- Adscend Media -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">9. Adscend Media</span>
+                    <span class="platform-badge">PUBLISHER FRIENDLY</span>
+                </div>
+                <div class="platform-rating">4.3 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📲 App installs, surveys, signups</p>
+                <p>🤝 Avg: $0.20–$10 per action</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('AdscendMedia', 'USD')">BECOME A PUBLISHER</button>
+        </div>
+
+        <!-- Ayet Studios -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">10. Ayet Studios</span>
+                    <span class="platform-badge">EMERGING MARKETS</span>
+                </div>
+                <div class="platform-rating">4.2 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🕹️ Mobile apps & games (CPA/CPI)</p>
+                <p>🌍 Avg: $0.10–$2 per install</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('AyetStudios', 'USD')">PROMOTE GAMES</button>
+        </div>
+
+        <!-- Persona.ly -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">11. Persona.ly</span>
+                    <span class="platform-badge">CPI NETWORK</span>
+                </div>
+                <div class="platform-rating">4.5 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>📱 Cost-per-install campaigns</p>
+                <p>📈 Avg: $0.10–$3 per install</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('PersonaLy', 'USD')">GET CPI OFFERS</button>
+        </div>
+
+        <!-- AdGate Media -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">12. AdGate Media</span>
+                    <span class="platform-badge">REWARD-BASED</span>
+                </div>
+                <div class="platform-rating">4.3 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🛍️ Surveys, trials, cashback offers</p>
+                <p>🛒 Avg: $0.50–$20 per lead</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('AdGateMedia', 'USD')">JOIN NETWORK</button>
+        </div>
+
+        <!-- Lootably -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">13. Lootably</span>
+                    <span class="platform-badge">GIFT CARDS</span>
+                </div>
+                <div class="platform-rating">4.2 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🎁 Gift cards & instant cash</p>
+                <p>💸 Avg: $0.10–$5 per offer</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('Lootably', 'USD')">EARN WITH GIFTS</button>
+        </div>
+
+        <!-- TimeWall -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">14. TimeWall</span>
+                    <span class="platform-badge">LOW COST TRAFFIC</span>
+                </div>
+                <div class="platform-rating">4.1 <span class="stars">★★★★☆</span></div>
+            </div>
+            <div class="platform-details">
+                <p>⏳ Content lockers, rewarded videos</p>
+                <p>📱 Avg: $0.20–$4 per action</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('TimeWall', 'USD')">TRY CONTENT LOCKER</button>
+        </div>
+
+        <!-- Fyber -->
+        <div class="platform-card">
+            <div class="platform-header">
+                <div>
+                    <span class="platform-name">15. Fyber</span>
+                    <span class="platform-badge">CPI</span>
+                </div>
+                <div class="platform-rating">4.6 <span class="stars">★★★★★</span></div>
+            </div>
+            <div class="platform-details">
+                <p>🕹️ Games, apps, rewarded actions</p>
+                <p>📈 Avg: $0.10–$5 per install</p>
+            </div>
+            <button class="claim-btn" onclick="showPlatformNotification('Fyber', 'USD')">ACCESS MOBILE OFFERS</button>
+        </div>
+
     </div>
 
     <!-- Ad Space -->
@@ -32,5 +274,6 @@
     </div>
 </div>
 
+<script src="assets/script.js"></script>
 </body>
 </html>
