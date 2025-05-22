@@ -17,14 +17,13 @@ function showPlatformNotification(platform, currency) {
         amount = (Math.random() * 100 + 10).toFixed(2);
     } else if (currency === "RUB") {
         amount = Math.floor(Math.random() * 5000 + 1000);
-    } else {
+    } else { // USD
         amount = (Math.random() * 15 + 1).toFixed(2);
     }
-
     showNotification({
         icon: "💸",
         badge: "WITHDRAWAL",
-        message: `<strong>${username}</strong> withdrew <span style='color:#FFD700'>${amount} ${currency}</span> via ${platform}!`,
+        message: `<strong>${username}</strong> earned <span style='color:#FFD700'>\$${amount} USD</span> on ${platform}!`,
         duration: 6000
     });
 }
