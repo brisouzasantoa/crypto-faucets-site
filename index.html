@@ -14,56 +14,60 @@
         <p>Instant withdrawals • Exclusive bonuses • Community rated</p>
     </header>
 
-    <!-- Seção Destacada de CPA Offers -->
-<section class="cpa-offers-highlight">
+   <!-- Seção CPA Offers - Glassmorphism -->
+<section class="cpa-highlight">
     <div class="cpa-banner">
-        <h2>🔥 Hot CPA Offers Paying Today!</h2>
+        <h2>🔥 Hot CPA Offers Paying Now</h2>
         <p>Check out the best CPA offers that are currently paying real crypto — handpicked for you.</p>
-        <button class="cta-btn" onclick="window.location.href='cpa-offers.html'">View CPA Offers →</button>
+        <button class="cta-button" onclick="window.location.href='cpa-offers.html'">View CPA Offers →</button>
     </div>
 </section>
 
 <style>
-    /* Highlight Section */
-    .cpa-offers-highlight {
-        background: linear-gradient(135deg, rgba(255, 87, 34, 0.1), rgba(255, 193, 7, 0.1));
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 25px;
-        margin: 20px 0;
-        border-radius: 12px;
-        text-align: center;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    }
+    /* Glassmorphism Banner */
+.cpa-highlight {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
 
-    .cpa-offers-highlight h2 {
-        color: var(--accent);
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-    }
+.cpa-highlight h2 {
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
 
-    .cpa-offers-highlight p {
-        color: rgba(255,255,255,0.8);
-        font-size: 0.95rem;
-        margin-bottom: 15px;
-    }
+.cpa-highlight p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
 
-    .cta-btn {
-        background: linear-gradient(90deg, var(--primary), var(--danger));
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 6px;
-        font-weight: bold;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(255, 149, 0, 0.4);
-    }
+.cta-button {
+    background: linear-gradient(90deg, var(--primary), var(--danger));
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 149, 0, 0.4);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
-    .cta-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 16px rgba(255, 149, 0, 0.6);
-    }
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 149, 0, 0.6);
+}
 </style>
     <!-- Ad Space -->
     <div class="ad-space">
