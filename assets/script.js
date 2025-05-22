@@ -132,3 +132,28 @@ function acceptCookies() {
     localStorage.setItem("cookiesAccepted", "true");
     cookieBanner.style.display = "none";
 }
+
+// Notificações exclusivas para CPA Offers
+function showCPAWithdrawal(platform, currency) {
+    const username = getRandomCPAUsername();
+    let amount;
+    if (currency === "USD") {
+        amount = (Math.random() * 50 + 0.1).toFixed(2);
+    } else {
+        amount = Math.floor(Math.random() * 1000 + 50);
+    }
+    showCPANotification({
+        icon: "💸",
+        badge: "WITHDRAWAL",
+        message: `<strong>${username}</strong> earned <span style='color:#FFD700'>\$${amount} USD</span> on ${platform}!`,
+        duration: 6000
+    });
+}
+
+// Nome único para CPA Offers
+function getRandomCPAUsername() {
+    const prefixes = ["RewardsPro", "CashKing", "MobileMogul", "LeadHunter"];
+    const suffixes = ["Player", "Expert", "Master", "Gamer"];
+    return prefixes[Math.floor(Math.random() * prefixes.length)] +
+           suffixes[Math.floor(Math.random() * suffixes.length)];
+}
