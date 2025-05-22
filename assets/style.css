@@ -483,3 +483,9 @@ h1 {
         font-size: 0.85rem;
     }
 }
+.cpa-highlight {
+    outline: 2px solid red !important; /* Marca a div */
+}
+.cpa-highlight .cpa-banner {
+    outline: 2px dashed yellow !important; /* Marca o conteúdo interno */
+}
