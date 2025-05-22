@@ -302,6 +302,68 @@ h1 {
     padding-top: 10px;
 }
 
+/* === Seção: CPA Offers === */
+.offer-card {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(50, 50, 50, 0.8));
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+.offer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+.offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.offer-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+.offer-badge {
+    background: var(--danger);
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.offer-details {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.claim-btn {
+    background: linear-gradient(90deg, var(--primary), var(--danger));
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 149, 0, 0.3);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+.claim-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 149, 0, 0.5);
+}
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 149, 0, 0.4); }
+    70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(255, 149, 0, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 149, 0, 0); }
+}
+
 /* Media Queries Responsivas */
 @media (max-width: 768px) {
     .platform-card {
