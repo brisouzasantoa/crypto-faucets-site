@@ -525,3 +525,14 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(255, 149, 0, 0.6);
 }
+/* === Links no Rodapé === */
+.footer-link {
+    color: var(--accent); /* Dourado */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
