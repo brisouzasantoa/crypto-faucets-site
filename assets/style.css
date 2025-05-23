@@ -500,11 +500,11 @@ h1 {
         font-size: 1.6rem;
     }
 }
-/* === Botão Home Fixo === */
+/* === Botão Home Fixo (Lado Esquerdo) === */
 .home-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     background: var(--primary);
     color: white;
     padding: 12px 16px;
@@ -521,7 +521,7 @@ h1 {
 }
 
 .home-button:hover {
-    background: #e68a00;
+    background: #e68a00; /* Tom mais escuro de laranja */
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(255, 149, 0, 0.6);
 }
