@@ -500,3 +500,28 @@ h1 {
         font-size: 1.6rem;
     }
 }
+/* === Botão Home Fixo === */
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(255, 149, 0, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-button:hover {
+    background: #e68a00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(255, 149, 0, 0.6);
+}
