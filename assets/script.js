@@ -157,3 +157,27 @@ function getRandomCPAUsername() {
     return prefixes[Math.floor(Math.random() * prefixes.length)] +
            suffixes[Math.floor(Math.random() * suffixes.length)];
 }
+
+// Função para carregar rodapé dinamicamente
+function loadFooter() {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+            // Verifica se o cookie banner deve ser exibido
+            const cookieBanner = document.getElementById("cookieConsent");
+            if (!localStorage.getItem("cookiesAccepted") && cookieBanner) {
+                cookieBanner.style.display = "flex";
+            }
+        })
+        .catch(err => console.error("Footer load failed:", err));
+}
+
+// Função para aceitar cookies
+function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    const cookieBanner = document.getElementById("cookieConsent");
+    if (cookieBanner) {
+        cookieBanner.style.display = "none";
+    }
+}
